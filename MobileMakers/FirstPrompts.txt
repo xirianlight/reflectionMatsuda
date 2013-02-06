@@ -1,2 +1,25 @@
-Reflection questions!
-I'm thinking about stuff. You can tell because I'm writing it. Bouse.
+Day two, since we didn't reflect on day 1
+First Code CSI:
+
+Going through the code and just trying to figure out what we know, what we didn't, what we could learn.
+
+It was pretty neat, a great way to verify what information was absorbed correctly, what wasn't… I definitely need to spend more time on custom classes and @property, @implementation, @interface.
+
+The idea of being able to go through someone else's code and see what it's doing is interesting, although it requires a great deal of tree-for-forest thought. You have to look at a line of code and see what it does inside  the block it's in, in the class it's in, in the file it's in, in the program it's in. That's how something goes from being an method parameter to being the number of cards in a player's hand at the table. We were able to deduce that the game appears something like Texas Hold'em, but can't be sure given how little we were able to get into the @implementations… the structure for the @interface was pretty straightforward, though, less code, just names. Easier for psuedocode, probably a good place to start. Break down the idea into it's smallest constituent parts then reassemble it. It's like alchemy.
+
+It's weird being in a classroom and acting like a teacher, even though I don't know much about the subject. I can internalize what these things mostly mean, but I almost end up looking like an instructor due to my technical knowledge about these damn computers. Can't leave the job after all, though it's been nice to be  free for two days. I've been able to focus better here than at home or on the train, I'm not as angry about the weird stuff in my life… I should go back over my zen literature. Need to get back in focus with who I like being, not who I become when left in a state of nature.
+
+Maybe things'll get simpler soon, maybe they won't, but I've got a lot to be thankful for. That's nice.
+
+Still need to play more LoL.
+
+Is it worth slowing down my progress to help others? Maybe if I can put in the extra time outside of class, but that's my time. That'd be my active choice to handicap myself. That's a tough moral dilemma. 
+
+This is also a great reminder that you need to write clear, tidy code. So that someone can waltz into it and begin understanding what you meant, your intentions. The names for things get long, but they aren't easy to confuse. The conglomeration of your knowledge of behavior patterns, schemas and the like help logically make sense of these breadcrumbs. Think like they think. Teach down, but never at the cost of function.
+
+I hope the next exercises are more straightforward. It's gonna be hard thinking of coding not as empirical. It is, but it really can be more like art. How your brain makes logic is different from most other coders. There isn't one answer. It's like design - no right answer, just the most appropriate answer. That answer may be a compromise, but it's still the appropriate one given your circumstances.
+
+I'm tired. I'm getting bored with being tired all the time.
+
+Need to eat with these people and talk in smaller groups. More useful bonding versus communal discourse, which, while enjoyable, is not facilitating name-learning. Or learning about people. 
+Behavior defines us - I guess I'm kind of a teacher.

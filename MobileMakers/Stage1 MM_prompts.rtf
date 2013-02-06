@@ -2,7 +2,7 @@
 \cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
 {\colortbl;\red255\green255\blue255;\red100\green56\blue32;\red196\green26\blue22;\red170\green13\blue145;
 \red0\green116\blue0;\red28\green0\blue207;\red46\green13\blue110;}
-\margl1440\margr1440\margb1800\margt1800\vieww13900\viewh8400\viewkind0
+\margl1440\margr1440\margb1800\margt1800\vieww13900\viewh9780\viewkind0
 \deftab720
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
@@ -38,7 +38,7 @@ Video: Objective-C Essential Training (lynda.com)
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \b0\fs32 \cf0 \expnd0\expndtw0\kerning0
-\ul \ulc0 Section 1 - Getting Started\
+\ul Section 1 - Getting Started\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs24 \cf0 \expnd0\expndtw0\kerning0
@@ -131,7 +131,7 @@ Know the old code since you may have to enter an older project and tweak it or w
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs32 \cf0 \expnd0\expndtw0\kerning0
-\ul \ulc0 Section 2 - Objective-C Basics\
+\ul Section 2 - Objective-C Basics\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs24 \cf0 \expnd0\expndtw0\kerning0
@@ -223,7 +223,7 @@ Because you want users stuck on iPad first gens (4.2.1) to user your software. B
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs32 \cf0 \expnd0\expndtw0\kerning0
-\ul \ulc0 Section 3 - Program Flow\
+\ul Section 3 - Program Flow\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs24 \cf0 \expnd0\expndtw0\kerning0
@@ -535,7 +535,7 @@ A function is any piece of code, usually a task, that is encapsulated so that it
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs32 \cf0 \expnd0\expndtw0\kerning0
-\ul \ulc0 Section 4 - Variables\
+\ul Section 4 - Variables\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs24 \cf0 \expnd0\expndtw0\kerning0
@@ -771,7 +771,7 @@ DO THIS LATER\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs32 \cf0 \expnd0\expndtw0\kerning0
-\ul \ulc0 Section 5 - Classes\
+\ul Section 5 - Classes\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs24 \cf0 \expnd0\expndtw0\kerning0
@@ -801,10 +801,29 @@ Response:\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i0 \cf0 \expnd0\expndtw0\kerning0
-mobileMakersParticipant *Participant1 = "Ross Matsuda"\
+\
+@ mobileMakersParticipant \{\
+	@property NSString * studentName;\
+	@property int studentAge;\
+	@property char studentGender;\
+	@property int studentExperienceLevel;\
+-(void) StudyDammit\{\};\
+-(void) DrinkCoffee\{\};\
+-(void)EmploymentGet\{\};\
+\}
+\i \expnd0\expndtw0\kerning0
+\
 
-\b come back to this
-\b0 \
+\i0 \expnd0\expndtw0\kerning0
+mobileMakersParticipant *student1 = (NSString *) @"Ross Matsuda"\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+\
 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
@@ -861,7 +880,18 @@ Response:\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i0 \cf0 \expnd0\expndtw0\kerning0
-No use of colons, use of square brackets - really highlights where these calls are occurring, and for method calls where multiple variables are required, the method can be broken down into smaller parts to make it easier to read and identify which variable is being fed into which part of the method.\
+No use of colons, use of square brackets - [myObject myMethod:argument] -\
+In other languages, it's myObject.someMethod(); - they use dot syntax\
+in dot syntax, you'll also have result=myObject.someMethod - you do the same in OBJC, just prefix with result =\
+in dot syntax, arg goes in parentheses, here we use colons\
+[myObject someMethod:arg]\
+Going further, with multiple arguments, instead of separating arguments by commas, we split the name up (looks kind of like CSS)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+\cf0 \expnd0\expndtw0\kerning0
+[myObject someMethod: arg continuationOfMethod : arg2 methodStillGoing : arg3 ]\expnd0\expndtw0\kerning0
+\
+\
+Method calls where multiple arguments are required, the method can be broken down into smaller parts to make it easier to read and identify which variable is being fed into which part of the method. This is more readable, easier to communicate, easier to edit. Quite helpful. Most of the other syntax changes are just that - syntax, not about function. \
 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
@@ -889,13 +919,19 @@ Response:\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i0 \cf0 \expnd0\expndtw0\kerning0
+A class method must call the class that owns it. An instance method must be called by an OBJECT of that class.\
 \
+method class: +(return) name;\
+[NSMutableArray arrayWithArray: myArray];\
 \
+method instance: -(return)name;\
+NSString * myString: @"A string.";\
+NSString * myStringUC = [myString uppercaseString];\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs32 \cf0 \expnd0\expndtw0\kerning0
-\ul \ulc0 Section 6 - Memory Management\
+\ul Section 6 - Memory Management\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs24 \cf0 \expnd0\expndtw0\kerning0
@@ -1125,7 +1161,7 @@ Because ARC is doing it, and it'll do it better than you ever could. HA.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs32 \cf0 \expnd0\expndtw0\kerning0
-\ul \ulc0 Section 7 - Custom Classes\
+\ul Section 7 - Custom Classes\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs24 \cf0 \expnd0\expndtw0\kerning0
@@ -1155,10 +1191,36 @@ Response:\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i0 \cf0 \expnd0\expndtw0\kerning0
-Interface and implementation\
+Interface (.h) and implementation (.m)\
 Interface holds the blueprint for the class, the properties and methods that it will eventually hold\
 Implementation is just what it says - the actual properties and methods defined.\
-do the challenge later\
+TWEET CLASS\
+\
+@interface Tweet: NSObject\
+	@property NSString *tweetContent;\
+	@property NSDate * tweetDate;\
+	@property int tweetNumber;\
+-(NSString *) tweetLeetify;\
+-(void) tweetRemove;\
+\
+@end\
+\
+@implementation Tweet\
+	@synthesize tweetContent\
+	@synthesize tweetDate\
+	@synthesize tweetNumber\
+\
+-(NSString *) tweetLeetify : (NSString *) tweetContent \{\
+	//make your tweet l33t because why the hell not\
+	return leetedTweet;\
+\}\
+-(void) tweetRemove : (Tweet) tweetNumber \{\
+	//delete your tweet\
+	return NSLog(@"Yep, your tweet's gone");\
+\}\
+\
+@end\
+\
 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
@@ -1186,7 +1248,7 @@ Response:\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \i0 \cf0 \expnd0\expndtw0\kerning0
-DO THIS LATER\
+DONE\
 \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
@@ -1216,6 +1278,7 @@ Response:\
 \i0 \cf0 \expnd0\expndtw0\kerning0
 We don't really use them now unless we really want to specify them for internal-only usage. It got easier in one regards, since we don't have to @synthesize all our variables in our @implementation section, but that could mean it's easier to get mixed up or miss things...\
 \
+In the old days it was harder to pipe variables out because your instance variables were in curly braces. In the new method, it's easier! @properties can just be used (so I guess those are what got obscured). No getters/setters or accessor methods. \
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
@@ -1277,7 +1340,7 @@ You can have deallocs do custom things, but you'll never call them, ARC will. \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs32 \cf0 \expnd0\expndtw0\kerning0
-\ul \ulc0 Section 8 - Collections\
+\ul Section 8 - Collections\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs24 \cf0 \expnd0\expndtw0\kerning0
@@ -1411,7 +1474,7 @@ for (NSString *years in bigYears) \{\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs32 \cf0 \expnd0\expndtw0\kerning0
-\ul \ulc0 Section 9 - File Management\
+\ul Section 9 - File Management\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs24 \cf0 \expnd0\expndtw0\kerning0
@@ -1532,7 +1595,7 @@ Response:\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs32 \cf0 \expnd0\expndtw0\kerning0
-\ul \ulc0 Section 10 - More Complex Classes\
+\ul Section 10 - More Complex Classes\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
 
 \fs24 \cf0 \expnd0\expndtw0\kerning0
