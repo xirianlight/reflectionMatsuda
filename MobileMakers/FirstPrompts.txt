@@ -23,3 +23,40 @@ I'm tired. I'm getting bored with being tired all the time.
 
 Need to eat with these people and talk in smaller groups. More useful bonding versus communal discourse, which, while enjoyable, is not facilitating name-learning. Or learning about people. 
 Behavior defines us - I guess I'm kind of a teacher.
+ - ross
+____________________________________________________
+Day 4 reflection
+
+Subjects, subject, subjects…
+learning science, primitives, pointers, arrays, memory, version control, git, classes, inheritance, naming conventions, app structure, memory management, interface builder
+
+This week, we nailed down the beginnings of Objective C and app development. We started by just prototyping some of the most basic ideas and extrapolated on them.
+I'm fascinated by the learning sciences, it's always nice to nerd out about psychology again, especially when it's a field that can be utilized for personal development. The most important hacks are always how you hack yourself to make yourself qualitatively better. Or at least feel better. 
+ThHe stuff on primitives pointers, arrays and memory felt very… basic. It was a shame we spent so much time on it, but I'll be eating my words when we hit something complex and the rest of the group gets it and I do not. I suppose I'll be paying it forward to give as much good karma as I can in order to reap as little bad later. Be patient, sir. You got this.
+Version control and git was interesting… it's less of a programmer skill, more of a Mac OS skill. My background fits it better. It was quite straightforward once it got visualized.  More on these in a moment.
+
+This week we started. We went from just passively hearing about objective c and writing some prompts to editing together a working web browser. 
+
+The work we did has one big problem with it. Well, at least the work I did. Just like with how I often design, I found myself stealing code from older projects of mine or from the internet. I feel like I need a stronger base to pull from so I won't need all these external resources. To be fair, it's been four days. But, set the bar high. I want to be able to pull these things out as if it were anything else I truly care about. I want to be able to troubleshoot code as easily as I troubleshoot computers. I want to be able to have someone ask me how to do something and be able to recite it as easily as I can the location of something inside System Preferences.
+
+Managing my attention has overall been quite easy. I think my brain was beyond desperate for something to fixate on NOT all the trauma happening around me. That first day it was tough, since it was all so fresh, but now I have some distance. It's tough when it always is - forty minutes after a meal, when I'm still waking up or transitioning from trudging outside to sitting immobile. These are things I already understood. That's nice.
+
+This weekend I'm going to zero out my debts. I'm going to finish the videos so I won't be behind anymore, I'm going to try a few more code tweaks to our apps just to get more used to Xcode. That's enough. Don't wanna get over ambitious. That's enough. Maybe pay off the PayPal nonsense when executive relations gets back to me. Also, distill my notes. Especially the last day and a half are quite scattered, they need to be re-aggregated. Heh, sixteen pages in four days. Not bad.
+
+Interface Builder is freaking wonderful. It's nice having a tool that is hard to use, since it makes sure you truly and deeply understand the underlying code… in Photoshop, you can use it without knowing much about photography and how things work. If you don't know how to do it in Objective C, you can't get terribly far with interface builder. Hopefully the better I get at it, the more complex my applications will become. My growth in one should bring the other with it. I dig it.
+
+Inheritance is a fun idea. It's simple, it's CSS. If you cascade your classes, you inherit what you need and you can override what you don't. That which is nested the deepest, the most specific, wins. Old hat.
+
+I miss sleep. Gonna do a lot of that now. This should improve my overall quality of life. Now all I need is the rest… New home, finish sloughing off the skin of The State, get over my anger from PayPal. And maybe learn how the error codes we see in Xcode can translate to common user symptoms at the store.
+
+And it's snowing again. God dammit.
+
+I should buy new shoes. Fiscal boundaries that prevent me from being happy are incredibly silly. I'm in a good enough place that a $50 pair of shoes shouldn't be a problem. If your feet are wet, take care of it. Yes, there's a direct penalty to pay for it, but the penalty, in the grand scheme, is so infinitesimal that it's not WORTH the extra thought. Free your mind. Do not bend the spoon, just bend.
+
+I think next week will be fun. I won't feel behind. I'll have one BIG chunk of worry off my mind. Maybe I'll advance faster. And maybe we'll start working on other fun projects. Like the Tanoshii menu or trying to figure out wireless buffering syncs on iOS. I like that. 
+
+Need to see what's up with what Apple will own. Since it's personal leave or vacation, I'm not worried. And I haven't booted up xCode on site during all my training, so that shouldn't be a legal problem, and even if it were, I doubt it could ever be tracked. So i'm in the clear. All I have to do is learn and develop on my lonesome. Hope I can make some good contacts here… 
+Signing off, 
+ - ross
+_________________________________________________
+
