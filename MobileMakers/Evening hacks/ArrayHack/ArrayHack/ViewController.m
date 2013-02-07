@@ -52,6 +52,7 @@
 
 - (IBAction)addElement:(id)sender {
     // Put your code to add the element here;
+    numberOfElements++;
     [self displayArray];
 }
 
@@ -60,11 +61,7 @@
 //    NSValue * arrayInObject = [NSValue valueWithPointer:numberArray];
 //    NSMutableArray * arrayMutable = [NSMutableArray arrayWithObject:arrayInObject];
     //NSMutableArray * myMutableArray = [NSMutableArray arrayWithArray:numberArray];//
-    NSMutableArray *myMutableArray;
-    [myMutableArray initWithCapacity:10];
-    [myMutableArray addObjectsFromArray:numberArray];
-    
-    [myMutableArray removeObjectAtIndex:0];
+    numberOfElements--;
     [self displayArray];
 }
 
