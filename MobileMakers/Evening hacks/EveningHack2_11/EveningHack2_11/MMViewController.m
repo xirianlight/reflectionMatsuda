@@ -32,18 +32,24 @@
 
 //When submit button is pressed
 - (IBAction)submitButton:(id)sender {
+    //Create blank song
     Song *mySong = [[Song alloc]init];
-   mySong.title = self.songTitleTextField.text;
-//    [mySong setTitle : self.songTitleTextField.text];
-    NSLog (@"The text field says %@",self.songTitleTextField.text);
+    
+    //Assign and log song title
+    mySong.title = self.songTitleTextField.text;
+        //The following line can be used to log the value in the text field.
+        //NSLog (@"The text field says %@",self.songTitleTextField.text);
     NSLog(@" Song title is %@", mySong.title);
     
+    //Assign and log song artist
     mySong.Artist = self.artistTextField.text;
     NSLog(@"Artist is %@",mySong.artist);
     
+    //Assign and log song album
     mySong.Album = self.albumTextField.text;
     NSLog(@"Album is %@", mySong.album);
     
+    //Assign and log song genre
     mySong.Genre = self.genreTextField.text;
     NSLog(@"Genre is %@", mySong.genre);
     
