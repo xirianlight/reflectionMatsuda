@@ -11,10 +11,10 @@
 @interface Song : NSObject 
 
 //Set all four main properties here.
-@property (retain, nonatomic) NSString * title;
-@property (retain, nonatomic) NSString * artist;
-@property (retain, nonatomic) NSString * album;
-@property (retain, nonatomic) NSString * genre;
+    @property (retain, nonatomic) NSString * title;
+    @property (retain, nonatomic) NSString * artist;
+    @property (retain, nonatomic) NSString * album;
+    @property (retain, nonatomic) NSString * genre;
 
 
 @end

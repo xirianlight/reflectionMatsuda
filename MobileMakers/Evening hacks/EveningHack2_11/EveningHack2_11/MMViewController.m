@@ -68,4 +68,12 @@
     [[self artistTextField] resignFirstResponder];
     [[self songTitleTextField] resignFirstResponder];
 }
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    //get rid of keyboard whenever return is hit
+    [textField resignFirstResponder];
+    //Is there a way to have, on Return key pressed, to run the method for submitButton?
+    return YES;
+}
 @end
