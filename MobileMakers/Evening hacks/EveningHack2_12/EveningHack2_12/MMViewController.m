@@ -62,18 +62,18 @@
     
     //Dictionary to hold all four pizza places
     self.chicagoPizzaPlaces = @{
-                                @"Gino's":ginosEast,
-                                @"Giordanos":giordanos,
-                                @"Carmens":carmens,
-                                @"Gigio's":gigios,
-                                @"Pizza5":@"pizza5Details",
-                                @"Pizza6":@"pizza6Details",
-                                @"Pizza7":@"pizza7Details",
-                                @"Pizza8":@"pizza8Details",
-                                @"Pizza9":@"pizza9Details",
-                                @"Pizza10":@"pizza10Details",
-                                @"Pizza11":@"pizza11Details",
-                                @"Pizza12":@"pizza12Details",
+                                @"0":ginosEast,
+                                @"1":giordanos,
+                                @"2":carmens,
+                                @"3":gigios,
+                                @"4":@"pizza5Details",
+                                @"5":@"pizza6Details",
+                                @"6":@"pizza7Details",
+                                @"7":@"pizza8Details",
+                                @"8":@"pizza9Details",
+                                @"9":@"pizza10Details",
+                                @"10":@"pizza11Details",
+                                @"11":@"pizza12Details",
                                 };
 
 
@@ -93,7 +93,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
-    // Return the number of rows in the section (automatically pulled by object).
+    // Return the number of rows in the section (automatically pulled by object). Here, 12.
     return [self.chicagoPizzaPlaces count];
 }
 
@@ -109,8 +109,9 @@
 
    //This code is from the interwebs and i don't get it
     
-        NSArray *pizzaKeys = [self.chicagoPizzaPlaces allKeys];
-   
+       NSArray *pizzaKeys = [self.chicagoPizzaPlaces allKeys];
+
+                 //Can't fix it, will have to redo the entire f@&*ing thing
     
     // NSString *stringVersionOfIPR = [NSString stringWithFormat:@"%d", indexPath.row];
     

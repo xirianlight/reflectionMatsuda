@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+@interface MMViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
     NSMutableArray* items;
 }
