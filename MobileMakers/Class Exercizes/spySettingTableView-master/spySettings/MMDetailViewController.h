@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MMDetailViewController : UIViewController
-
+@property (nonatomic,strong) NSString *detailString;
+@property (nonatomic,strong) NSString *groupString;
 @end

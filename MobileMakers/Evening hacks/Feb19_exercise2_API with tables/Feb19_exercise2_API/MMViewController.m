@@ -9,6 +9,9 @@
 #import "MMViewController.h"
 
 @interface MMViewController ()
+{
+    NSArray *testArray;
+}
 
 @end
             //IGNORE ME!!!!!
@@ -65,6 +68,7 @@
              self.tweetArrayForTable = [NSMutableArray arrayWithArray:[resultsArray valueForKey:@"text"]];
                     //Get the objects for the value "from_user" (the tweet author)
              self.tweetNamesArrayForTable = [NSMutableArray arrayWithArray:[resultsArray valueForKey:@"from_user"]];       //created_at also works
+             
              [tweetTable reloadData];
              [activityWheel stopAnimating];
          }
