@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83A6DF7316E2E17F006C5E51 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A6DF7216E2E17F006C5E51 /* UIKit.framework */; };
+		83A6DF7516E2E17F006C5E51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A6DF7416E2E17F006C5E51 /* Foundation.framework */; };
+		83A6DF7716E2E17F006C5E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A6DF7616E2E17F006C5E51 /* CoreGraphics.framework */; };
+		83A6DF7D16E2E17F006C5E51 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83A6DF7B16E2E17F006C5E51 /* InfoPlist.strings */; };
+		83A6DF7F16E2E17F006C5E51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6DF7E16E2E17F006C5E51 /* main.m */; };
+		83A6DF8316E2E17F006C5E51 /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6DF8216E2E17F006C5E51 /* MMAppDelegate.m */; };
+		83A6DF8516E2E17F006C5E51 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A6DF8416E2E17F006C5E51 /* Default.png */; };
+		83A6DF8716E2E17F006C5E51 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A6DF8616E2E17F006C5E51 /* Default@2x.png */; };
+		83A6DF8916E2E17F006C5E51 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83A6DF8816E2E17F006C5E51 /* Default-568h@2x.png */; };
+		83A6DF8C16E2E17F006C5E51 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A6DF8A16E2E17F006C5E51 /* MainStoryboard.storyboard */; };
+		83A6DF8F16E2E17F006C5E51 /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A6DF8E16E2E17F006C5E51 /* MMViewController.m */; };
+		83A6DFA116E32DD4006C5E51 /* libYelpKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A6DF9C16E2E323006C5E51 /* libYelpKit.a */; };
+		83A6DFA316E32E47006C5E51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A6DFA216E32E47006C5E51 /* QuartzCore.framework */; };
+		83A6DFA516E32E4E006C5E51 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A6DFA416E32E4E006C5E51 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83A6DF9B16E2E323006C5E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83A6DF9516E2E323006C5E51 /* YelpKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 005592E8140B0085001E9C43;
+			remoteInfo = YelpKit;
+		};
+		83A6DF9D16E2E323006C5E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83A6DF9516E2E323006C5E51 /* YelpKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00DB563915BE198600E247FA;
+			remoteInfo = YelpKitCatalog;
+		};
+		83A6DF9F16E2E4B0006C5E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83A6DF9516E2E323006C5E51 /* YelpKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 005592E7140B0085001E9C43;
+			remoteInfo = YelpKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83A6DF6F16E2E17F006C5E51 /* yelpWeekendHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yelpWeekendHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A6DF7216E2E17F006C5E51 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		83A6DF7416E2E17F006C5E51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		83A6DF7616E2E17F006C5E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		83A6DF7A16E2E17F006C5E51 /* yelpWeekendHack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "yelpWeekendHack-Info.plist"; sourceTree = "<group>"; };
+		83A6DF7C16E2E17F006C5E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		83A6DF7E16E2E17F006C5E51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83A6DF8016E2E17F006C5E51 /* yelpWeekendHack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yelpWeekendHack-Prefix.pch"; sourceTree = "<group>"; };
+		83A6DF8116E2E17F006C5E51 /* MMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
+		83A6DF8216E2E17F006C5E51 /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
+		83A6DF8416E2E17F006C5E51 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		83A6DF8616E2E17F006C5E51 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		83A6DF8816E2E17F006C5E51 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		83A6DF8B16E2E17F006C5E51 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		83A6DF8D16E2E17F006C5E51 /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
+		83A6DF8E16E2E17F006C5E51 /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
+		83A6DF9516E2E323006C5E51 /* YelpKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YelpKit.xcodeproj; path = ../../../YelpKit/YelpKit.xcodeproj; sourceTree = "<group>"; };
+		83A6DFA216E32E47006C5E51 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		83A6DFA416E32E4E006C5E51 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83A6DF6C16E2E17F006C5E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A6DFA516E32E4E006C5E51 /* MapKit.framework in Frameworks */,
+				83A6DFA316E32E47006C5E51 /* QuartzCore.framework in Frameworks */,
+				83A6DFA116E32DD4006C5E51 /* libYelpKit.a in Frameworks */,
+				83A6DF7316E2E17F006C5E51 /* UIKit.framework in Frameworks */,
+				83A6DF7516E2E17F006C5E51 /* Foundation.framework in Frameworks */,
+				83A6DF7716E2E17F006C5E51 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83A6DF6616E2E17F006C5E51 = {
+			isa = PBXGroup;
+			children = (
+				83A6DF9516E2E323006C5E51 /* YelpKit.xcodeproj */,
+				83A6DF7816E2E17F006C5E51 /* yelpWeekendHack */,
+				83A6DF7116E2E17F006C5E51 /* Frameworks */,
+				83A6DF7016E2E17F006C5E51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83A6DF7016E2E17F006C5E51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83A6DF6F16E2E17F006C5E51 /* yelpWeekendHack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83A6DF7116E2E17F006C5E51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83A6DFA416E32E4E006C5E51 /* MapKit.framework */,
+				83A6DFA216E32E47006C5E51 /* QuartzCore.framework */,
+				83A6DF7216E2E17F006C5E51 /* UIKit.framework */,
+				83A6DF7416E2E17F006C5E51 /* Foundation.framework */,
+				83A6DF7616E2E17F006C5E51 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83A6DF7816E2E17F006C5E51 /* yelpWeekendHack */ = {
+			isa = PBXGroup;
+			children = (
+				83A6DF8116E2E17F006C5E51 /* MMAppDelegate.h */,
+				83A6DF8216E2E17F006C5E51 /* MMAppDelegate.m */,
+				83A6DF8A16E2E17F006C5E51 /* MainStoryboard.storyboard */,
+				83A6DF8D16E2E17F006C5E51 /* MMViewController.h */,
+				83A6DF8E16E2E17F006C5E51 /* MMViewController.m */,
+				83A6DF7916E2E17F006C5E51 /* Supporting Files */,
+			);
+			path = yelpWeekendHack;
+			sourceTree = "<group>";
+		};
+		83A6DF7916E2E17F006C5E51 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83A6DF7A16E2E17F006C5E51 /* yelpWeekendHack-Info.plist */,
+				83A6DF7B16E2E17F006C5E51 /* InfoPlist.strings */,
+				83A6DF7E16E2E17F006C5E51 /* main.m */,
+				83A6DF8016E2E17F006C5E51 /* yelpWeekendHack-Prefix.pch */,
+				83A6DF8416E2E17F006C5E51 /* Default.png */,
+				83A6DF8616E2E17F006C5E51 /* Default@2x.png */,
+				83A6DF8816E2E17F006C5E51 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83A6DF9616E2E323006C5E51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83A6DF9C16E2E323006C5E51 /* libYelpKit.a */,
+				83A6DF9E16E2E323006C5E51 /* YelpKitCatalog.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83A6DF6E16E2E17F006C5E51 /* yelpWeekendHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83A6DF9216E2E17F006C5E51 /* Build configuration list for PBXNativeTarget "yelpWeekendHack" */;
+			buildPhases = (
+				83A6DF6B16E2E17F006C5E51 /* Sources */,
+				83A6DF6C16E2E17F006C5E51 /* Frameworks */,
+				83A6DF6D16E2E17F006C5E51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83A6DFA016E2E4B0006C5E51 /* PBXTargetDependency */,
+			);
+			name = yelpWeekendHack;
+			productName = yelpWeekendHack;
+			productReference = 83A6DF6F16E2E17F006C5E51 /* yelpWeekendHack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83A6DF6716E2E17F006C5E51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Genius and Madness";
+			};
+			buildConfigurationList = 83A6DF6A16E2E17F006C5E51 /* Build configuration list for PBXProject "yelpWeekendHack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 83A6DF6616E2E17F006C5E51;
+			productRefGroup = 83A6DF7016E2E17F006C5E51 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 83A6DF9616E2E323006C5E51 /* Products */;
+					ProjectRef = 83A6DF9516E2E323006C5E51 /* YelpKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				83A6DF6E16E2E17F006C5E51 /* yelpWeekendHack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		83A6DF9C16E2E323006C5E51 /* libYelpKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libYelpKit.a;
+			remoteRef = 83A6DF9B16E2E323006C5E51 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		83A6DF9E16E2E323006C5E51 /* YelpKitCatalog.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = YelpKitCatalog.app;
+			remoteRef = 83A6DF9D16E2E323006C5E51 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83A6DF6D16E2E17F006C5E51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A6DF7D16E2E17F006C5E51 /* InfoPlist.strings in Resources */,
+				83A6DF8516E2E17F006C5E51 /* Default.png in Resources */,
+				83A6DF8716E2E17F006C5E51 /* Default@2x.png in Resources */,
+				83A6DF8916E2E17F006C5E51 /* Default-568h@2x.png in Resources */,
+				83A6DF8C16E2E17F006C5E51 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83A6DF6B16E2E17F006C5E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A6DF7F16E2E17F006C5E51 /* main.m in Sources */,
+				83A6DF8316E2E17F006C5E51 /* MMAppDelegate.m in Sources */,
+				83A6DF8F16E2E17F006C5E51 /* MMViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83A6DFA016E2E4B0006C5E51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YelpKit;
+			targetProxy = 83A6DF9F16E2E4B0006C5E51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83A6DF7B16E2E17F006C5E51 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83A6DF7C16E2E17F006C5E51 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		83A6DF8A16E2E17F006C5E51 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83A6DF8B16E2E17F006C5E51 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83A6DF9016E2E17F006C5E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83A6DF9116E2E17F006C5E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83A6DF9316E2E17F006C5E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "yelpWeekendHack/yelpWeekendHack-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "yelpWeekendHack/yelpWeekendHack-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		83A6DF9416E2E17F006C5E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "yelpWeekendHack/yelpWeekendHack-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
+				INFOPLIST_FILE = "yelpWeekendHack/yelpWeekendHack-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83A6DF6A16E2E17F006C5E51 /* Build configuration list for PBXProject "yelpWeekendHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A6DF9016E2E17F006C5E51 /* Debug */,
+				83A6DF9116E2E17F006C5E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83A6DF9216E2E17F006C5E51 /* Build configuration list for PBXNativeTarget "yelpWeekendHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83A6DF9316E2E17F006C5E51 /* Debug */,
+				83A6DF9416E2E17F006C5E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83A6DF6716E2E17F006C5E51 /* Project object */;
+}

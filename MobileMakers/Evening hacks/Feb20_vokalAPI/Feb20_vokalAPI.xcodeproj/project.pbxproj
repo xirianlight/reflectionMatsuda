@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8305C5F016EE5B0300FE7DFC /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8305C5EE16EE5B0300FE7DFC /* Model.xcdatamodeld */; };
+		8305C5F316EE5B4E00FE7DFC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8305C5F216EE5B4E00FE7DFC /* Person.m */; };
+		8305C5F516EE628800FE7DFC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8305C5F416EE628800FE7DFC /* CoreData.framework */; };
 		8378F56F16D53CF000406E2A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378F56E16D53CF000406E2A /* UIKit.framework */; };
 		8378F57116D53CF000406E2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378F57016D53CF000406E2A /* Foundation.framework */; };
 		8378F57316D53CF000406E2A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8378F57216D53CF000406E2A /* CoreGraphics.framework */; };
@@ -21,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8305C5EF16EE5B0300FE7DFC /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8305C5F116EE5B4E00FE7DFC /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		8305C5F216EE5B4E00FE7DFC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		8305C5F416EE628800FE7DFC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8378F56B16D53CF000406E2A /* Feb20_vokalAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feb20_vokalAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8378F56E16D53CF000406E2A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8378F57016D53CF000406E2A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8305C5F516EE628800FE7DFC /* CoreData.framework in Frameworks */,
 				8378F56F16D53CF000406E2A /* UIKit.framework in Frameworks */,
 				8378F57116D53CF000406E2A /* Foundation.framework in Frameworks */,
 				8378F57316D53CF000406E2A /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +64,7 @@
 		8378F56216D53CF000406E2A = {
 			isa = PBXGroup;
 			children = (
+				8305C5F416EE628800FE7DFC /* CoreData.framework */,
 				8378F57416D53CF000406E2A /* Feb20_vokalAPI */,
 				8378F56D16D53CF000406E2A /* Frameworks */,
 				8378F56C16D53CF000406E2A /* Products */,
@@ -88,6 +97,9 @@
 				8378F58616D53CF000406E2A /* MainStoryboard.storyboard */,
 				8378F58916D53CF000406E2A /* MMViewController.h */,
 				8378F58A16D53CF000406E2A /* MMViewController.m */,
+				8305C5EE16EE5B0300FE7DFC /* Model.xcdatamodeld */,
+				8305C5F116EE5B4E00FE7DFC /* Person.h */,
+				8305C5F216EE5B4E00FE7DFC /* Person.m */,
 				8378F57516D53CF000406E2A /* Supporting Files */,
 			);
 			path = Feb20_vokalAPI;
@@ -177,6 +189,8 @@
 				8378F57B16D53CF000406E2A /* main.m in Sources */,
 				8378F57F16D53CF000406E2A /* MMAppDelegate.m in Sources */,
 				8378F58B16D53CF000406E2A /* MMViewController.m in Sources */,
+				8305C5F016EE5B0300FE7DFC /* Model.xcdatamodeld in Sources */,
+				8305C5F316EE5B4E00FE7DFC /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,8 +313,22 @@
 				8378F59016D53CF000406E2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8305C5EE16EE5B0300FE7DFC /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8305C5EF16EE5B0300FE7DFC /* Model.xcdatamodel */,
+			);
+			currentVersion = 8305C5EF16EE5B0300FE7DFC /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8378F56316D53CF000406E2A /* Project object */;
 }

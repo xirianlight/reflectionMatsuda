@@ -1,0 +1,97 @@
+iPhone 5 QA round 0 - Nathan
+
+without Instruments:
+
+the current user location blue dot is weird in its movement (Cannot fix without re-introducing re-center bug)
+the pictures dont make sense to me
+directions dont work if your phone doesnt have googlemaps (Yup, Yelp problem)
+in bookmarks tab there is an empty cell at the top (Leftover SQL data, not a big deal here)
+didnt realize that the plus button was a bookmark button (Is there a better icon?)
+couldnt swipe back from a store website to go back into yelpview (Hm)
+not sure what the solitary picture on the bottom is supposed to tell me when im in the location (Add text overlay with photo name? or "You chose:")
+im more interested in seeing the second page, with the actual wifi places. the first page feels like empty noise that gives me no utility, just an extra page to go through to get where i want to (Structure note)
+history has duplicate places. (Legacy data, or core data problem)
+the blacking out of the first screen is a little slow and is a little too dark, i lose place of where i am (Speed up adding overlay? lighten it?)
+the circle pictures are overlapping in a way where i dont lick the picture i want too without zooming in all the way. so first i have to zoom out and then zoom in (Overlapping issue)
+when i click a picture i get a name of a place but then it takes em into a screen where that name is no where to be found. (No, you get the name of the picture)
+i click a picture and expect to be in a small area but i still am shown a huge area (Zoom level?)
+the solitary picture in the screen with wifi signals doesnt change ig i change places but that seems like its then an arbitrary pic that gives me no info
+unclear of what the circle button to the right is doing. (Photo not refreshing properly?)
+if you press refresh several times quickly it takes lots of time to get back, sometimes it goes through th eprocess multiple times (Disable button for 6 seconds after press?)
+refreshing gets rid of history, how will i know where i was yesterday:( , some places on the history went away some didnt. not sure why. on closer examination it appears to only save the first three in history not including the blank cell at te top (History limit still stuck?)
+on the wifi signals page i dont know what the greyed out singular circle photo is supposed to be telling me (Where your picture was)
+refrh button takes a while to activate, not sure if i pressed it and then i click twice or thrice and then it is slow (Stop people from spamming refresh button)
+
+Zanette's response
+1. Usability - 
+	Nice Intorductory screen with INSTRUCTIONS for the user. I love this.
+	The map centers well.
+	The screen fades to black upon selecting photo. This means that the screen is dark, and there is no activity indicator on the first screen.
+	Therefore, the black screen should be lighter, and an activity indicator is needed so the user knows what is about to occur.
+	Bookmarks delete well. Persistence is great.	 Good job with Core Data
+	There are instances where the history tab is not updating. After deleting the history items, the history tab doesn't populate anymore. This only 		occurred after deleting all of the bookmarks and history. 
+	Bookmarks had items and the history entries were not there.
+	The bookmark table had an empty entry and after additional bookmarks were added, the entry populated.
+	The swipe 'to go forward and back' informational went 'up and down'. I would change the wording. 
+2. Performance issues - 
+	Photos take a while to load with no activity indicator for the user.
+3. Bugs/Crashes - Not applicaable. The app never crashed. Great job Team.
+4. Device Type/Operating System - i5o6
+	
+
+Peanut Gallery - From Ian
+3.5 inch retina
+version 6.1.3
+
+Usability Issues
+- If zoomed out, black overlay only covers set radius and first mapview
+- Photo annotations cover user's location
+- User can navigate to various sites (ex. Facebook) through the Yelp webview
+- Selected photo on first map view does not match photo on second mapview.  I'm sure this was on purpose, but it was a bit confusing.  Are there suppose to be multiple photos or is this just another photo from the area?
+
+PerformanceIssues
+- Black overlay cuts out while zooming out quickly on first mapview
+- Pinch zooming like a wild man cause significant pauses
+
+Bugs/Crashes
+- Upon first use, 2 out of 9 photo results didn't bring up disclosure box when clicked
+
+
+____________________________________________________________
+NOW
+Clarify text in loading image to say "free wifi"
+One pic per venue or change zoom level to make it much more detailed
+History reset
+Deactivate refresh button after pressing
+Annotations - make square, add white border
+	Only return one result per location
+	Zoom level of map leading to too many results, too many pictures
+Mask overlay - make it lighter, make bigger
+	Max zoom level for maps
+Change navigation swipes to arrows in web view
+Move larger image view box to first view controller -aspect fit/fill based on photo size
+	
+Activity Indicator
+Core Data shenanigans (history/bookmarks/sorting)
+Change bookmark button to look like bookmark Plus
+Change annotation for photo location (second VC) to pin with thumbnail as accessory
+Change Yelp keys around with randomization
+
+LATER
+Photo pins not bringing up callouts when tapped (Paul thinks this is GCD)
+Zoom level of second VC, results query VC
+History: section table view by day
+Wifi icons showing up as annotations bug
+Draw map overlay earlier or on different thread?
+Animate slide on-off of image view, tap to load next page?
+Refresh button just brings up activity indicator, not title screen
+
+Way later
+Re-engineer first view controller
+Change how annotations are displayed after span goes above a certain size
+Z level of MKUserLocation so it sits on top
+
+
+Ross Matsuda has a background in graphic design, psychology, tech support and theatrical directing. He's a proud graduate of MobileMakers and will be continuing with his career in mobile application development, graphic design and user experience. Here's to more years of innovation, yes?
+
+Wi-Where is a project developed by the four peanuts you see above this very text. Our goal was to let a user discover new places to connect through a visual browsing experience. When you want to get online out of the house, you find yourself at cafés, restaurants, parks - and more often than not, the same ones over and over again. What if you had some sort of insight as to the environment around new destinations before you left? Using Wi-Where, you can see interesting pictures taken around these locales that provide complimentary wifi access to make sure you find one that will suit your taste.

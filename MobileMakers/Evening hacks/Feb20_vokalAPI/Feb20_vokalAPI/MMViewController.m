@@ -7,6 +7,9 @@
 //
 
 #import "MMViewController.h"
+#import <CoreData/CoreData.h>
+#import "person.h"
+#import "MMAppDelegate.h"
 
 @interface MMViewController ()
 {
@@ -42,13 +45,35 @@ completionHandler:^void (NSURLResponse * vokalResponse, NSData* vokalData, NSErr
         } else
             
         {
-            //Code here, brah!!!! We gotta convert it from NSData to something usable
-            NSError *jsonError;
-            id jsonRawData = [NSJSONSerialization JSONObjectWithData:vokalData options:NSJSONReadingAllowFragments error:&jsonError];
-            vokalSpies = (NSArray *)jsonRawData;
-            NSLog(@"%@", vokalSpies);
-                //The above line tells the jsonRawData that we're ASSIGNING it the type NSArray
+            //Create a reference to yoru AppDelegate
+            MMAppDelegate * mmAppDelegate = (MMAppDelegate*) [[UIApplication sharedApplication] delegate];
             
+            
+            NSError *error;
+            id jsonRawData = [NSJSONSerialization JSONObjectWithData:vokalData options:NSJSONReadingAllowFragments error:&error];
+            NSArray * jsonArray = (NSArray *)jsonRawData;
+            NSLog(@"%@", jsonArray);
+                //The above line tells the jsonRawData that we're ASSIGNING it the type NSArray
+            //Let's turn this array INTO PEOPLE! IT'S PEOPLE!
+            //This iterates thruogh the array and feeds the data into a temporary dictionary called 'dictionary'
+            for (NSDictionary * dictionary in jsonArray)
+            {
+                Person * person = [NSEntityDescription insertNewObjectForEntityForName:@"Person" inManagedObjectContext:mmAppDelegate.managedObjectContext];
+                //This makes the new entity to fill
+                person.name = [dictionary valueForKey: @"name"];
+                person.email = [dictionary valueForKey: @"email"];
+                person.photoURL = [dictionary valueForKey: @"avatar_url"];
+            }
+            //So, all those are now enumerated. Let's save and verify the save completed.
+            if (![mmAppDelegate.managedObjectContext save:&error])
+            {
+                NSLog(@"Failed to save: %@", [error userInfo]);
+            }
+            
+            //Now flip a bool that states that we successfully pulled some data!
+            
+            
+            vokalSpies = [mmAppDelegate allEntitiesNamed:@"Person"];
             
             //Next, reload data and stop animating
             [vokalTableView reloadData];
@@ -58,6 +83,11 @@ completionHandler:^void (NSURLResponse * vokalResponse, NSData* vokalData, NSErr
     }];
     
     
+}
+
+-(void) hasDataBeenLoadedIntoCoreDataBefore
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -83,7 +113,7 @@ completionHandler:^void (NSURLResponse * vokalResponse, NSData* vokalData, NSErr
             //A string for the name
     spyName = [spyRecord valueForKey:@"name"];
             //A string for the URL of the picture to load
-    NSString *spyPictureString = [spyRecord valueForKey:@"avatar_url"];
+    NSString *spyPictureString = [spyRecord valueForKey:@"photoURL"];
     NSURL *spyPictureURL = [NSURL URLWithString:spyPictureString];
     NSData *spyPictureData = [NSData dataWithContentsOfURL:spyPictureURL];
     UIImage *spyPicture = [UIImage imageWithData:spyPictureData];

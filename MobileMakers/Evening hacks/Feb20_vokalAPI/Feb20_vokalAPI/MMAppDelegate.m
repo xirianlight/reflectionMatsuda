@@ -7,15 +7,52 @@
 //
 
 #import "MMAppDelegate.h"
+#import <CoreData/CoreData.h>
 
 @implementation MMAppDelegate
+@synthesize managedObjectContext = managedObjectContext;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSFileManager * fileManager = [NSFileManager defaultManager];
+    NSURL * documentsDirectory = [[fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+    NSURL * modelURL = [[NSBundle mainBundle] URLForResource:@"Model" withExtension:@"momd"];
+    NSURL * sqliteURL = [documentsDirectory URLByAppendingPathComponent:@"model.sqlite"];
+    managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    
+    persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
+    //Code to add SQLite file
+    NSError * error;
+    if ([persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:sqliteURL options:nil error:&error])
+    {
+        //If successful, setup managedContextObject
+        managedObjectContext = [[NSManagedObjectContext alloc] init];
+        managedObjectContext.persistentStoreCoordinator = persistentStoreCoordinator;
+    }
+    
     return YES;
 }
-							
+
+
+-(NSArray *) allEntitiesNamed: (NSString*) entityName
+{
+    //Set up our variables
+    NSFetchRequest * fetchRequest = [[NSFetchRequest alloc]init];
+    NSEntityDescription * entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
+    NSError * error;
+    //Set the entity type we want to retrieve
+    fetchRequest.entity = entity;
+    //Big return
+    return [managedObjectContext executeFetchRequest:fetchRequest error:&error];
+}
+
+
+
+
+
+
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

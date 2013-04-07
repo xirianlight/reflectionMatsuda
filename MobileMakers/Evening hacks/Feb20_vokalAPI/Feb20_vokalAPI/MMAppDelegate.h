@@ -9,7 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface MMAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    NSManagedObjectModel * managedObjectModel;
+    NSPersistentStoreCoordinator * persistentStoreCoordinator;
+    NSManagedObjectContext * managedObjectContext;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (readonly, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+-(NSArray *) allEntitiesNamed: (NSString*) entityName;
 
 @end
